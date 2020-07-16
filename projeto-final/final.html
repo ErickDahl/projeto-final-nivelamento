@@ -16,7 +16,7 @@
             function lerNumeros()
             {
                 var a = [];
-
+                
                 for(var i = 0; i < 5; i++)
                 {
                     a[i] = prompt(`Digite o ${i+1} número`); 
@@ -35,11 +35,11 @@
             {
                 for(var i = 0; i < 5; i++)
                 {
-                    if(n[i] % 2 == 0)
+                    if(n[i] % 2 == 0 && !(n[i] == n[i+1]) && !(n[i] == n[i+2]) && !(n[i] == n[i+3]) && !(n[i] == n[i+4]))
                     {
                         document.write(`${n[i]} é par<br>`);
                     }
-                    else
+                    else if((n[i] % 2 != 0 && !(n[i] == n[i+1]) && !(n[i] == n[i+2]) && !(n[i] == n[i+3]) && !(n[i] == n[i+4])))
                     {
                         document.write(`${n[i]} é impar<br>`); 
                     }
