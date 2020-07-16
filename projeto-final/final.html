@@ -15,16 +15,21 @@
                 a[i] = prompt(`Digite o ${i+1} número`); 
             }
 
-            retornaNumero(a);
+            maiorMenorNumero(a);
+            parImpar(a);
             numeroRepetido(a);
-            function retornaNumero(n)
+
+
+            function maiorMenorNumero(n)
             {
                 var maior = Math.max.apply(null,n);
                 var menor = Math.min.apply(null,n);
 
                 document.write(`O número ${maior} é o maior número<br>`);
                 document.write(`O número ${menor} é o menor número<br>`);
-
+            }
+            function parImpar(n)
+            {
                 for(var i = 0; i < 5; i++)
                 {
                     if(n[i] % 2 == 0)
@@ -51,7 +56,7 @@
                             
                         }
                     }
-                    if(!(n[j] == n[j+1]) && !(n[j] == n[j+2]) && !(n[j] == n[j+3]) && !(n[j] == n[j+4]) && !(n[j] == n[j+5]))
+                    if(!(n[j] == n[j+1]) && !(n[j] == n[j+2]) && !(n[j] == n[j+3]) && !(n[j] == n[j+4]))
                     {
                         document.write(`${n[j]} se repetiu ${repetido} vezes<br>`);
                     }
