@@ -8,16 +8,21 @@
     <body>
         <script>
 
-            var a = [];
+            var n = lerNumeros();
+            maiorMenorNumero(n);
+            parImpar(n);
+            numeroRepetido(n);
 
-            for(var i = 0; i < 5; i++)
+            function lerNumeros()
             {
-                a[i] = prompt(`Digite o ${i+1} número`); 
-            }
+                var a = [];
 
-            maiorMenorNumero(a);
-            parImpar(a);
-            numeroRepetido(a);
+                for(var i = 0; i < 5; i++)
+                {
+                    a[i] = prompt(`Digite o ${i+1} número`); 
+                }
+                return a;
+            }
 
 
             function maiorMenorNumero(n)
