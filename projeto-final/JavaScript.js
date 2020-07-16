@@ -155,6 +155,8 @@ tornando seu tempo mais otimizado e o fazendo chegar a solução mais rápido.
 Fila e pilha são formas de organizamos a entrada e saida de dados para algum propósito.
 Sendo fila o primeiro a entrar é o primeiro a sair e pilha o primeiro a entrar é o último a sair.
 
+Exemplo: para filas podemos imaginar um array que possúi uma ordem e para pilha podemos imaginar um objeto que possúi suas características empilhadas.
+
 */
 
 // 14 Explique com suas palavras qual a diferença entre html, javascript e css.7°
@@ -163,5 +165,4 @@ Sendo fila o primeiro a entrar é o primeiro a sair e pilha o primeiro a entrar 
 Para o html é o que vemos na tela e como vamos montar os elementos visuais de uma página com o que o usuário irá interagir.
 Para o css temos o que podemos chamar de firulas visuais que é a parte onde se cuida de todos os elementos estéticos para tornar a página mais bonita.
 Para o JavaScript temos a parte onde as operações e o contato com o backend é realizado, a parte por detrás dos efeitos visuais.
-
 */
