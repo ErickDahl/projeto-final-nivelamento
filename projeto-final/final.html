@@ -8,20 +8,21 @@
     <body>
         <script>
 
-            var n = lerNumeros();
-            maiorMenorNumero(n);
-            parImpar(n);
-            numeroRepetido(n);
+            const maximo = 5;
+            var numeros = lerNumeros();
+            maiorMenorNumero(numeros);
+            parImpar(numeros);
+            numeroRepetido(numeros);
 
             function lerNumeros()
             {
-                var a = [];
+                var numeros = [];
                 
-                for(var i = 0; i < 5; i++)
+                for(var i = 0; i < maximo; i++)
                 {
-                    a[i] = prompt(`Digite o ${i+1} número`); 
+                    numeros[i] = prompt(`Digite o ${i+1} número`); 
                 }
-                return a;
+                return numeros;
             }
             function maiorMenorNumero(n)
             {
@@ -33,7 +34,7 @@
             }
             function parImpar(n)
             {
-                for(var i = 0; i < 5; i++)
+                for(var i = 0; i < maximo; i++)
                 {
                     if(n[i] % 2 == 0 && !(n[i] == n[i+1]) && !(n[i] == n[i+2]) && !(n[i] == n[i+3]) && !(n[i] == n[i+4]))
                     {
@@ -49,18 +50,18 @@
             {
                 var repetido = 0;
          
-                for(var j = 0; j < 5; j++)
+                for(var i = 0; i < maximo; i++)
                 {
-                    for(var w = 0; w < 5; w++)
+                    for(var j = 0; j < maximo; j++)
                     {
-                        if(n[j] == n[w])
+                        if(n[i] == n[j])
                         {
                             repetido++; 
                         }
                     }
-                    if(!(n[j] == n[j+1]) && !(n[j] == n[j+2]) && !(n[j] == n[j+3]) && !(n[j] == n[j+4]))
+                    if(!(n[i] == n[i+1]) && !(n[i] == n[i+2]) && !(n[i] == n[i+3]) && !(n[i] == n[i+4]))
                     {
-                        document.write(`${n[j]} se repetiu ${repetido} vezes<br>`);
+                        document.write(`${n[i]} se repetiu ${repetido} vezes<br>`);
                     }
                     repetido = 0;
                 }
